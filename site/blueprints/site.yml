@@ -1,0 +1,14 @@
+title: Site
+
+sections:
+  projects:
+    type: pages
+#    status: listed
+    image:
+      query: page.images.findBy("name", "cover")
+      back: black
+    template:
+      - projects
+    layout: cards
+    size: medium
+    text: false

@@ -1,0 +1,26 @@
+title: Image
+
+accept:
+  type: image
+  extension: jpg, png, jpeg
+  mime: image/jpeg, image/png
+
+columns:
+  - width: 2/3
+    sections:
+      content:
+        type: fields
+        fields:
+          alt:
+            label: Texte alternatif
+            type: text
+
+          caption:
+            label: Légende
+            type: writer
+            nodes: false
+            marks:
+              - link
+              - bold
+              - italic
+              - underline

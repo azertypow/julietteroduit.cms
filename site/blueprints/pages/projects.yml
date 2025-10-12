@@ -1,0 +1,14 @@
+title: Projects
+
+icon: 🏠
+
+sections:
+  projects:
+    headline: Projets
+    type: pages
+    status: all
+    templates: project
+    info: "{{ page.date }}"
+    image:
+      query: page.covers_container.toFiles
+      cover: true

@@ -1,0 +1,85 @@
+title: Projet
+
+icon: 🖼️
+
+status:
+  draft:
+    label: Brouillon
+    text: Le projet est toujours en mode brouillon. Elle ne peut être vue que par les éditeurs ayant accès à l'administration.
+  listed:
+    label: Publié
+    text: Le projet est en ligne.
+
+
+columns:
+  covers_container:
+    width: 1/1
+    fields:
+      covers:
+        required: true
+        type: files
+        multiple: true
+        query: page.images.template('image')
+        label: Image(s) de couverture
+        help: Images qui s'afficherons sur la page d'accueil
+        uploads:
+          template: image
+
+  main:
+    width: 3/4
+    fields:
+      content:
+        label: Contenu
+        type: writer
+        marks:
+          - italic
+          - link
+        nodes:
+          - heading
+          - bulletList
+          - orderedList
+        headings:
+          - 2
+          - 3
+
+  aside:
+    width: 1/4
+    fields:
+      client:
+        label: Client
+        type: writer
+        inline: true
+        marks:
+          - italic
+          - link
+
+      localisation:
+        label: Lieu
+        type: writer
+        inline: true
+        marks:
+          - italic
+          - link
+      date:
+        type: date
+
+      photo_credits:
+        label: Crédit(s) photo
+        type: writer
+        inline: true
+        marks:
+          - italic
+          - link
+
+  gallery_column:
+    width: 1/1
+    fields:
+      gallery:
+        required: true
+        type: files
+        multiple: true
+        query: page.images.template('image')
+        label: Galerie
+        help: Images qui s'afficherons dans la galerie du projet
+        uploads:
+          template: image
