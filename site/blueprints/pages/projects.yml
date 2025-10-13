@@ -10,5 +10,6 @@ sections:
     templates: project
     info: "{{ page.date }}"
     image:
-      query: page.covers_container.toFiles
       cover: true
+    layout: cards
+    size: medium
