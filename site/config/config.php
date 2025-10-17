@@ -5,5 +5,13 @@ return [
     'basicAuth' => true,
     'allowInsecure' => false,
   ],
-  'debug' => true,
+  'debug' => false,
+  'routes' => [
+      [
+          'pattern' => '/',
+          'action'  => function () {
+              return go('/panel');
+          }
+      ],
+  ]
 ];
