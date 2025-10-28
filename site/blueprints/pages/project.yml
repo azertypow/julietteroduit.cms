@@ -49,6 +49,7 @@ columns:
       type:
         label: Type de projet
         type: select
+        required: true
         options:
           - Architecture
           - Scénographie
