@@ -46,7 +46,7 @@ columns:
     width: 1/4
     fields:
       client:
-        label: Client
+        label: Client·exs
         type: writer
         inline: true
         marks:
@@ -61,10 +61,11 @@ columns:
           - italic
           - link
       date:
+        label: Année
         type: date
 
       photo_credits:
-        label: Crédit(s) photo
+        label: Photos
         type: writer
         inline: true
         marks:
