@@ -45,6 +45,15 @@ columns:
   aside:
     width: 1/4
     fields:
+
+      type:
+        label: Type de projet
+        type: select
+        options:
+          - Architecture
+          - Scénographie
+          - Mobilier
+
       client:
         label: Client·exs
         type: writer
