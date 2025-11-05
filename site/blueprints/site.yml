@@ -4,7 +4,7 @@ sections:
   about:
     label: Informations globales
     type: pages
-#    status: listed
+    status: listed
     image:
       back: black
     template:
@@ -15,7 +15,7 @@ sections:
 
   projects:
     type: pages
-#    status: listed
+    status: listed
     image:
       query: page.images.findBy("name", "cover")
       back: black
