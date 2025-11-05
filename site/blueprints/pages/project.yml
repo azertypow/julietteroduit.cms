@@ -16,7 +16,7 @@ columns:
     width: 1/1
     fields:
       covers:
-        required: true
+        required: false
         type: files
         multiple: true
         query: page.images.template('image')
