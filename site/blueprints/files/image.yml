@@ -1,0 +1,14 @@
+title: Image
+
+accept:
+  type: image
+  extension: jpg, png, jpeg
+  mime: image/jpeg, image/png
+
+columns:
+  - width: 2/3
+    fields:
+      alt:
+        label: Texte alternatif
+        type: text
+        help: Description de l'image pour l'accessibilité
