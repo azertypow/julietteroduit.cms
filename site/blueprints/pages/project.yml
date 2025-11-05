@@ -73,6 +73,7 @@ columns:
       date:
         label: Année
         type: date
+        required: true
 
       photo_credits:
         label: Photos
