@@ -14,3 +14,4 @@ sections:
       cover: true
     layout: cards
     size: medium
+    limit: 500
