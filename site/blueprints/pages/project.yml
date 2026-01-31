@@ -16,6 +16,7 @@ columns:
     width: 1/1
     fields:
       covers:
+        width: 1/2
         required: false
         type: files
         multiple: true
@@ -24,6 +25,17 @@ columns:
         help: Images qui s'afficherons sur la page d'accueil
         uploads:
           template: image
+      miniature:
+        width: 1/2
+        required: true
+        type: files
+        multiple: false
+        query: page.images.template('image')
+        label: Image(s) de miniature
+        help: Images qui s'afficherons au hover
+        uploads:
+          template: image
+
 
   main:
     width: 3/4
