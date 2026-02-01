@@ -12,6 +12,7 @@ sections:
     info: "{{ page.date }}"
     image:
       cover: true
+      query: page.covers.toFile
     layout: cards
-    size: medium
+    size: small
     limit: 500
