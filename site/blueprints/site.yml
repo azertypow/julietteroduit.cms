@@ -1,26 +1,31 @@
 title: Site
 
-sections:
-  about:
-    label: Informations globales
-    type: pages
-    status: listed
-    image:
-      back: black
-    template:
-      - about
-    layout: cards
-    size: medium
-    max: 1
+columns:
+  - width: 1/4
+    sections:
+      about:
+        label: " "
+        type: pages
+        status: listed
+        image:
+          back: black
+        template:
+          - about
+        layout: cards
+        size: medium
+        max: 1
 
-  projects:
-    type: pages
-    status: listed
-    image:
-      query: page.images.findBy("name", "cover")
-      back: black
-    template:
-      - projects
-    layout: cards
-    size: medium
-    text: false
+  - width: 1/4
+    sections:
+      projects:
+        label: " "
+        type: pages
+        status: listed
+        image:
+          query: page.images.findBy("name", "cover")
+          back: black
+        template:
+          - projects
+        layout: cards
+        size: medium
+        max: 1
