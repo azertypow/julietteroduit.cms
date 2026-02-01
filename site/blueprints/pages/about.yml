@@ -19,3 +19,10 @@ columns:
         headings:
           - 2
           - 3
+      credits:
+        label: Crédits
+        type: writer
+        marks:
+          - italic
+          - link
+        nodes: false
